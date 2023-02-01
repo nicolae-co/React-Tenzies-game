@@ -7,8 +7,6 @@ function App() {
 
   const [dice, setDice] = useState(allNewDice())
 
-  console.log(dice)
-
   function allNewDice() {  
     const newDice = []
 
@@ -16,7 +14,7 @@ function App() {
       const randomNumber = Math.ceil(Math.random() * 6) 
       newDice.push({
         value: randomNumber,
-        isHeld: false,
+        isHeld: true,
         id: nanoid()
       })     
     }
@@ -31,6 +29,7 @@ function App() {
     <Die
       number={item.value}
       key={item.id}
+      isHeld={item.isHeld}
     />
   ))
 
