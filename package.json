@@ -1,5 +1,7 @@
 {
   "dependencies": {
-    "nanoid": "^4.0.0"
+    "nanoid": "^4.0.0",
+    "react-confetti": "^6.1.0",
+    "react-use-window-size": "^1.0.1"
   }
 }

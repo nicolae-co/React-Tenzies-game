@@ -14,6 +14,9 @@
 body{
     background-color: var(--veryDarkBlue);
     padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 main{
@@ -86,10 +89,27 @@ main{
     cursor: pointer;
     }
 
-.roll-dice:focus {
+.new-game{
+    background-color: #5035FF;
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    width: 120px;
+    height: 50px;
+    border: none;
+    box-shadow: 0px 3.2px 7.68px rgba(0, 0, 0, 0.18);
+    border-radius: 6px;
+    cursor: pointer; 
+}
+
+.roll-dice:focus,
+.new-game:focus {
     outline: none;
 }
     
-.roll-dice:active {
+.roll-dice:active,
+.new-game:active {
     box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
 }
